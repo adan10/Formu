@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Empresa">
+
+    <Button
+        android:id="@+id/Enviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="10dp"
+        android:text="Subir"
+        android:onClick="envia"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Ubicacion" />
+
+    <EditText
+        android:id="@+id/Nombre"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="41dp"
+        android:ems="10"
+        android:hint="Nombre Empleo"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/Descripcion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Descripcion"
+        android:layout_width="329dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="43dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Descipcion del Empleo"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/Horario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Nombre" />
+
+    <EditText
+        android:id="@+id/Horario"
+        android:layout_width="329dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="31dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Horario"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/Ubicacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Descripcion" />
+
+    <EditText
+        android:id="@+id/Ubicacion"
+        android:layout_width="333dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="48dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Ubicacion"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/Enviar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Horario" />
+</android.support.constraint.ConstraintLayout>
